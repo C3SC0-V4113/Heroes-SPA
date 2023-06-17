@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
 
 import "./styles.css";
-import { HeroesApp } from "./HeroesApp";
+import { AppRouter } from "./routes/AppRouter";
+
+const router = AppRouter();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <HeroesApp />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
