@@ -1,8 +1,7 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
+import { DcPage, MarvelPage } from "../heroes";
+import { LoginPage } from "../auth";
 import { HeroesApp } from "../HeroesApp";
-import { MarvelPage } from "../heroes/pages/MarvelPage";
-import { DcPage } from "../heroes/pages/DcPage";
-import { LoginPage } from "../auth/pages/LoginPage";
 
 export const AppRouter = () =>
   createBrowserRouter([

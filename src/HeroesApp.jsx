@@ -1,9 +1,10 @@
 import { Outlet } from "react-router-dom";
+import { NavBar } from "./routes";
 
 export const HeroesApp = () => {
   return (
     <>
-      <h1>HeroesApp</h1>
+      <NavBar />
       <Outlet />
     </>
   );
