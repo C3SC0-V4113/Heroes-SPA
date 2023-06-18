@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { NavBar } from "./routes";
+import { NavBar } from "./router";
 
 export const HeroesApp = () => {
   return (
