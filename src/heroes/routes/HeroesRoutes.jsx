@@ -4,6 +4,9 @@ import { DcPage, HeroPage, MarvelPage, SearchPage } from "../pages";
 export const HeroesRoutes = [
   {
     index: true,
+    element: <Navigate to={"/marvel"} replace />,
+  },
+  {
     path: "marvel",
     element: <MarvelPage />,
   },
