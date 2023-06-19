@@ -1,5 +1,5 @@
 import { Navigate } from "react-router-dom";
-import { DcPage, MarvelPage } from "../pages";
+import { DcPage, HeroPage, MarvelPage, SearchPage } from "../pages";
 
 export const HeroesRoutes = [
   {
@@ -15,4 +15,6 @@ export const HeroesRoutes = [
     path: "/*",
     element: <Navigate to={"/marvel"} replace />,
   },
+  { path: "search", element: <SearchPage /> },
+  { path: "hero", element: <HeroPage /> },
 ];
