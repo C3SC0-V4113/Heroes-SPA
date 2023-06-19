@@ -12,7 +12,7 @@ export const HeroesRoutes = [
     element: <DcPage />,
   },
   {
-    path: "*",
+    path: "/*",
     element: <Navigate to={"/marvel"} replace />,
   },
 ];

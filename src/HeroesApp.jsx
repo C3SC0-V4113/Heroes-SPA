@@ -1,11 +1,5 @@
-import { Outlet } from "react-router-dom";
-import { NavBar } from "./router";
+import { HeroesRoot } from "./heroes/pages";
 
 export const HeroesApp = () => {
-  return (
-    <>
-      <NavBar />
-      <Outlet />
-    </>
-  );
+  return <HeroesRoot />;
 };
