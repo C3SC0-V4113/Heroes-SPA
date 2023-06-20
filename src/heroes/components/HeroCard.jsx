@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const CharactersByHero = ({ alter_ego, characters }) => {
@@ -8,7 +9,7 @@ const CharactersByHero = ({ alter_ego, characters }) => {
 export const HeroCard = ({
   id,
   superhero,
-  publisher,
+  //   publisher,
   alter_ego,
   first_appearance,
   characters,
@@ -37,4 +38,18 @@ export const HeroCard = ({
       </div>
     </div>
   );
+};
+
+HeroCard.propTypes = {
+  id: PropTypes.string.isRequired,
+  superhero: PropTypes.string.isRequired,
+  publisher: PropTypes.string,
+  alter_ego: PropTypes.string.isRequired,
+  first_appearance: PropTypes.string.isRequired,
+  characters: PropTypes.string.isRequired,
+};
+
+CharactersByHero.propTypes = {
+  alter_ego: PropTypes.string.isRequired,
+  characters: PropTypes.string.isRequired,
 };
