@@ -19,5 +19,5 @@ export const HeroesRoutes = [
     element: <Navigate to={"/marvel"} replace />,
   },
   { path: "search", element: <SearchPage /> },
-  { path: "hero", element: <HeroPage /> },
+  { path: "hero/:id", element: <HeroPage /> },
 ];
