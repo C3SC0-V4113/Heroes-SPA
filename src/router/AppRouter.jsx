@@ -3,11 +3,19 @@ import { HeroesRoutes } from "../heroes";
 import { LoginPage } from "../auth";
 import { HeroesApp } from "../HeroesApp";
 import { AuthRoutes } from "../auth/routes";
-import { PrivateRoute } from "./components";
+import { PrivateRoute, PublicRoute } from "./components";
 
 export const AppRouter = () =>
   createBrowserRouter([
-    { path: "/login", element: <LoginPage />, children: AuthRoutes },
+    {
+      path: "/login",
+      element: (
+        <PublicRoute>
+          <LoginPage />
+        </PublicRoute>
+      ),
+      children: AuthRoutes,
+    },
     {
       path: "/",
       element: (
