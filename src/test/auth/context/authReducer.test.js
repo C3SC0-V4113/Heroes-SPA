@@ -8,7 +8,7 @@ describe("pruebas en authReducer.js", () => {
   };
 
   const initialState = {
-    logged: true,
+    logged: false,
     user: {
       id: "ABC",
       name: "Francisco Valle",
@@ -16,8 +16,8 @@ describe("pruebas en authReducer.js", () => {
   };
 
   test("debe retornar el estado por defecto", () => {
-    const authenticationReducer = authReducer(initialState, {});
-    expect(authenticationReducer).toBe(initialState);
+    const state = authReducer(initialState, {});
+    expect(state).toBe(initialState);
   });
 
   test("debe de (login) llamar el login autenticar y establecer el user", () => {
