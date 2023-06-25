@@ -55,6 +55,8 @@ describe("Pruebas en <NavBar/>", () => {
 
     expect(contextValue.logout).toHaveBeenCalled();
 
-    expect(mockedUsedNavigate).toHaveBeenCalled();
+    expect(mockedUsedNavigate).toHaveBeenCalledWith("/login", {
+      replace: true,
+    });
   });
 });
