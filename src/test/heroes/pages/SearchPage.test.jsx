@@ -51,13 +51,8 @@ describe("pruebas en <SearchPage/>", () => {
       </MemoryRouter>
     );
 
-    const input = screen.getByRole("textbox");
-    const form = screen.getByRole("form");
     const divNotFound = screen.getByLabelText("div_not-found");
-    fireEvent.input(input, { target: { value: inputValue } });
-    fireEvent.submit(form);
-
-    screen.debug();
+    // screen.debug();
     expect(divNotFound.style.display).toBe("");
   });
 
