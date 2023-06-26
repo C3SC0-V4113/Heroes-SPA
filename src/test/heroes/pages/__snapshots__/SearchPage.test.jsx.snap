@@ -40,11 +40,13 @@ exports[`pruebas en <SearchPage/> debe de mostrarse correctamente con valores po
       </h4>
       <hr />
       <div
+        aria-label="div_search"
         class="alert alert-primary animate__animated animate__fadeIn"
       >
         Search a Hero
       </div>
       <div
+        aria-label="div_not-found"
         class="alert alert-danger animate__animated animate__fadeIn"
         style="display: none;"
       >
